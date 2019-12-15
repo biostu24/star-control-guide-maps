@@ -1,3 +1,5 @@
+# This function parses the debug output of UQM to csv format
+
 def parse_stars(out_file_stars = 'data/star_data.csv',
                 star_file = 'data/stars'):
     # Parse stars

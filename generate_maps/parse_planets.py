@@ -1,3 +1,5 @@
+# This function parses the debug output of UQM to csv format
+
 def parse_planets(out_file_planets = 'data/planet_data.csv',
                   planet_file = 'data/PlanetInfo',
                   mineral_file = 'data/sub_minerals.txt'):

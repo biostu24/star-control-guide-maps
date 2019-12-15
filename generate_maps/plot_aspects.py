@@ -1,3 +1,5 @@
+# These helper function add various features used all the maps
+
 import matplotlib.patches as mpatches
 import numpy as np
 

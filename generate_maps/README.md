@@ -36,3 +36,6 @@ python parse_stars.py
 python plot_star_map.py &&
 python plot_mineral_density.py
 ```
+
+The generated figures are save to `maps`
+

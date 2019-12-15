@@ -8,6 +8,8 @@ import math
 class CurvedText(mtext.Text):
     """
     A text object that follows an arbitrary curve.
+
+    This class is used to plot curved text.
     """
     def __init__(self, x, y, text, axes, **kwargs):
         super(CurvedText, self).__init__(x[0],y[0],' ', **kwargs)
