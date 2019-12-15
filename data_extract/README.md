@@ -7,8 +7,8 @@ normally only generated when needed. However UQM does have a debugging mode
 that dumps all world data. The UQM source code has been modified (`uqm` folder)
 to dump additional data to `stdout`. 
 
-To get access to the data UQM needs to build from source, in debug mode. 
-The game requires a GCC version 4.9 to compile the game and will not compile 
+To get access to the data, UQM needs to build from source, in debug mode. 
+The game requires GCC version 4.9 to compile and will not compile 
 with later versions. 
 
 Docker is used to create the specific environment required to compile UQM. The
@@ -54,6 +54,6 @@ to export the game data, some to stdout, some to file. The stdout data is saved 
 ## Copying data to generate_maps folder 
 Run the following to move the world data to the map generation sub project:
 ```
-cp sub_minerals.txt ../../../generate_maps &&
-cp PlanetInfo ../../../generate_maps
+cp sub_minerals.txt ../../../generate_maps/data &&
+cp PlanetInfo ../../../generate_maps/data
 ```
