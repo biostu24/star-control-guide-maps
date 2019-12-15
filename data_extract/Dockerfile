@@ -3,14 +3,6 @@ FROM debian
 FROM gcc:4.9
 
 # Dependencies 
-#RUN apk update 
-#RUN apk add --no-cache bash
-#RUN apk add build-base 
-#RUN apk add libmikmod
-#RUN apk add sdl
-#RUN apk add dpkg
-#RUN dpkg https://packages.debian.org/stretch/amd64/libsdl-image1.2/download
-
 RUN apt update
 RUN apt install make
 RUN apt install bash
@@ -30,9 +22,4 @@ COPY docker_entrypoint.sh /
 RUN ls /usr/uqm
 
 # UQM build
-#WORKDIR "/usr/uqm"
-#RUN ls /usr/uqm/
-
-#WORKDIR "/usr/uqm"
-#CMD ["bash", "/usr/uqm/build.sh"]
 ENTRYPOINT ["bash", "docker_entrypoint.sh"]
